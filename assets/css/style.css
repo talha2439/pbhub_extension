@@ -1,31 +1,31 @@
-body{
-    width: 350px;
+body {
+  width: 350px;
 }
 
-main{
-    height: 450px;
+main {
+  height: 450px;
 }
 
-.orange_text{
-    color: rgb(242, 108, 37);
-    fill: rgb(242, 108, 37);
+.orange_text {
+  color: rgb(242, 108, 37);
+  fill: rgb(242, 108, 37);
 }
 
 .green_text {
-    color: #00c57d;
-    fill: #00c57d;
+  color: #00c57d;
+  fill: #00c57d;
 }
 
-.coupon_card{
-    cursor: pointer;
+.coupon_card {
+  cursor: pointer;
 }
 
-.coupon_card > div >.green_text{
-    transition: display 1s;
+.coupon_card > div > .green_text {
+  transition: display 1s;
 }
 
-.notification{
-    color: rgb(242, 108, 37);
-    border: 1px solid rgb(255, 190, 156);
-    background-color: rgb(255, 242, 235);
+.notification {
+  color: rgb(242, 108, 37);
+  border: 1px solid rgb(255, 190, 156);
+  background-color: rgb(255, 242, 235);
 }
