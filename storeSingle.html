@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-<body style="width: 350px;">
+<style>
+    
+</style>
+<body>
     <nav>
         <div class="container-fluid bg-secondary-subtle">
             <div class="py-3">
@@ -61,9 +64,9 @@
         </div>
     </nav>
 
-    <main class="bg-secondary-subtle px-1">
-        <section class="bg-white border-bottom border-5">
-            <div class="container-fluid">
+    <main class="bg-secondary-subtle overflow-y-auto">
+        <section class="container-fluid bg-white border-bottom border-5">
+            <div>
                 <div class="py-3 d-flex">
                     <div>
                         <a href="index.html">
@@ -87,9 +90,9 @@
                 </div>
             </div>
         </section>
-        <section class="bg-white">
+        <section class="container-fluid bg-white">
             <div class="row">
-                <div class="col-9 container-fluid d-flex align-items-center border-end border-2">
+                <div class="col-9 d-flex align-items-center border-end border-2">
                     <div class="d-flex justify-content-start p-1">
                         <div class="bg-light rounded-circle py-2">
                             <img src="https://cdn.honey.io/images/store-logos/366665935571464687.png"
@@ -109,27 +112,27 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <a href="#" class="d-flex align-items-center h-100 text-decoration-none ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="orange"
+                    <a href="#" class="d-flex align-items-center h-100 text-decoration-none orange_text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
                             viewBox="0 0 576 512">
                             <path
                                 d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
                         </svg>
-                        <span class="small ms-1" style="color: orange;">Shop</span>
+                        <span class="small ms-1">Shop</span>
                     </a>
                 </div>
             </div>
         </section>
         <section>
             <div class="container-fluid my-2">
-                <div class="alert alert-danger rounded-0" role="alert">
+                <div class="notification p-3 rounded-0" role="alert">
                     <div class="d-flex justify-content-between align-items-center mb-2">
                         <div>
                             <p class="text-danger mb-0 fs-6">Today’s Rewards Rate:</p>
                             <p class="text-danger mb-0 fs-6 fw-bold">Get 1 to 20% cash back</p>
                         </div>
                         <div>
-                            <a href="#" class="link-danger">View Store</a>
+                            <a href="#" class="link-danger small">View Store</a>
                         </div>
                     </div>
                     <p class="text-danger mb-0 small">PayPal Rewards Terms and exclusions apply. See specific offers for
@@ -138,9 +141,57 @@
                 </div>
             </div>
         </section>
-
+        <section>
+            <div class="container-fluid">
+                <div class="bg-white w-100 p-3 border-bottom border-5 coupon_card">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">Hello15</div>
+                        <p class="text-uppercase small mb-0 green_text d-none">Copied!</p>
+                    </div>
+                    <p class="text-capitalize mb-2">Extra 15% Off Your First Order</p>
+                    <p class="green_text mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".9rem" height=".9rem" viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                        </svg>
+                        Worked in 10 hours
+                    </p>
+                </div>
+                <div class="bg-white w-100 p-3 border-bottom border-5 coupon_card">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">Hello15</div>
+                        <p class="text-uppercase small mb-0 green_text d-none">Copied!</p>
+                    </div>
+                    <p class="text-capitalize mb-2">Extra 15% Off Your First Order</p>
+                    <p class="green_text mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".9rem" height=".9rem" viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                        </svg>
+                        Worked in 10 hours
+                    </p>
+                </div>
+                <div class="bg-white w-100 p-3 border-bottom border-5">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">CODE TRIED AT CHECKOUT</div>
+                    </div>
+                    <p class="orange_text mb-0 small">
+                        <img src="https://cdn.honey.io/images/icon-honeyexclusivecode.svg" class="img-fluid" alt="">
+                        Honey exclusive! - Worked 5 days ago
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center flex-column p-4">
+                    <img src="https://cdn.honey.io/images/icon-sharecode.svg" class="img-fluid" alt="">
+                    <p class="mb-0 text-secondary h5 fw-semibold">See a code we don’t have?</p>
+                    <a href="#" class="small">Share it with the community.</a>
+                </div>
+            </div>
+        </section>
     </main>
-
     <script src="assets/js/app.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.js"></script>
