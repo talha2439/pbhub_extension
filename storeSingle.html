@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <nav>
+        <div class="container-fluid bg-secondary-subtle">
+            <div class="py-3">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M9.72 6.66c.035-.83.225-1.928.802-2.578.814-.907 2.465-.762 2.737.549.13.64-.048 1.423-.354 1.973-.649 1.198-1.852 2.184-3.209 2.52.012-.75 0-1.725.024-2.465zm11.064 11.586c-.685.751-1.557 1.333-2.395 1.3-.943-.034-.85-1.143-.85-1.77v-2.634c.013-.504.013-1.008-.046-1.502-.154-1.467-1.062-2.644-2.772-2.756-2.972-.112-4.152 2.611-5.024 4.852v-4.908c2.595-.38 6.192-1.76 6.298-4.897C16.172.597 6.677.407 6.713 7.12c.012.516.012 1.502.012 2.017-1.274-.18-2.3-1.95-2.772-3.003a.314.314 0 0 0-.377-.18c-1.782.438-2.04 2.22-.838 3.43.99.997 2.571 1.378 3.963 1.445-.012 3.888-.012 6.287-.012 10.163.06.55.85.695 1.31.706.518.012 1.485-.134 1.533-.773.165-1.905 1.875-7.53 4.198-7.53.543 0 .802.336.802.83v4.582c0 1.905 1.133 3.183 3.197 3.194 1.828 0 3.432-1.434 4.234-3.082.248-.526-.814-1.064-1.18-.672z"
+                                fill="#212121"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="#0003"
+                                viewBox="0 0 128 512">
+                                <path
+                                    d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z" />
+                            </svg> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" fill="#0003"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z" />
+                            </svg>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Support</a></li>
+                            <li><a class="dropdown-item" href="#">Legal</a></li>
+                            <li><a class="dropdown-item" href="#">Rate Us</a></li>
+                            <li><a class="dropdown-item" href="#">log in or Join</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between mt-3">
+                    <div>
+                        <p class="fw-bold fs-5 mb-0 lh-sm">Paypal Rewards</p>
+                    </div>
+                    <div class="alert alert-warning border-0 d-flex align-items-center p-1 pe-2 rounded-pill mb-0">
+                        <div class="bg-warning rounded-circle px-1 me-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" fill="#000"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z" />
+                            </svg>
+                        </div>
+                        <strong>Log In</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-secondary-subtle overflow-y-auto">
+        <section class="container-fluid bg-white border-bottom border-5">
+            <div>
+                <div class="py-3 d-flex">
+                    <div>
+                        <a href="index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1.5rem" fill="#0009"
+                                viewBox="0 0 448 512">
+                                <path
+                                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="text-center mx-auto d-flex align-items-center">
+                        <p class="fw-semibold mb-0">Lorem, ipsum.</p>
+                        <div class="bg-warning rounded-circle px-1 py-0 ms-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width=".8rem" height=".8rem" fill="#000"
+                                viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid bg-white">
+            <div class="row">
+                <div class="col-9 d-flex align-items-center border-end border-2">
+                    <div class="d-flex justify-content-start p-1">
+                        <div class="bg-light rounded-circle py-2">
+                            <img src="https://cdn.honey.io/images/store-logos/366665935571464687.png"
+                                class="img-fluid my-1 p-1" width="45" height="40" alt="store">
+                        </div>
+                    </div>
+                    <div class="ms-auto d-flex">
+                        <div class="small d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width=".8rem" height=".8rem"
+                                fill="#0003">
+                                <path
+                                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
+                            </svg>
+                            1.3k
+                        </div>
+                        <button class="btn btn-sm btn-primary ms-2">Follow</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <a href="#" class="d-flex align-items-center h-100 text-decoration-none orange_text">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem"
+                            viewBox="0 0 576 512">
+                            <path
+                                d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                        </svg>
+                        <span class="small ms-1">Shop</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid my-2">
+                <div class="notification p-3 rounded-0" role="alert">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <div>
+                            <p class="text-danger mb-0 fs-6">Today’s Rewards Rate:</p>
+                            <p class="text-danger mb-0 fs-6 fw-bold">Get 1 to 20% cash back</p>
+                        </div>
+                        <div>
+                            <a href="#" class="link-danger small">View Store</a>
+                        </div>
+                    </div>
+                    <p class="text-danger mb-0 small">PayPal Rewards Terms and exclusions apply. See specific offers for
+                        details and restrictions. Cash
+                        redemption requires PayPal account in good standing.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="bg-white w-100 p-3 border-bottom border-5 coupon_card">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">Hello15</div>
+                        <p class="text-uppercase small mb-0 green_text d-none">Copied!</p>
+                    </div>
+                    <p class="text-capitalize mb-2">Extra 15% Off Your First Order</p>
+                    <p class="green_text mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".9rem" height=".9rem" viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                        </svg>
+                        Worked in 10 hours
+                    </p>
+                </div>
+                <div class="bg-white w-100 p-3 border-bottom border-5 coupon_card">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">Hello15</div>
+                        <p class="text-uppercase small mb-0 green_text d-none">Copied!</p>
+                    </div>
+                    <p class="text-capitalize mb-2">Extra 15% Off Your First Order</p>
+                    <p class="green_text mb-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width=".9rem" height=".9rem" viewBox="0 0 448 512">
+                            <path
+                                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+                        </svg>
+                        Worked in 10 hours
+                    </p>
+                </div>
+                <div class="bg-white w-100 p-3 border-bottom border-5">
+                    <div class="d-flex justify-content-between align-items-cente mb-3">
+                        <div class="px-1 border border-black text-uppercase bg-dark-subtle small">CODE TRIED AT CHECKOUT</div>
+                    </div>
+                    <p class="orange_text mb-0 small">
+                        <img src="https://cdn.honey.io/images/icon-honeyexclusivecode.svg" class="img-fluid" alt="">
+                        Honey exclusive! - Worked 5 days ago
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="d-flex align-items-center flex-column p-4">
+                    <img src="https://cdn.honey.io/images/icon-sharecode.svg" class="img-fluid" alt="">
+                    <p class="mb-0 text-secondary h5 fw-semibold">See a code we don’t have?</p>
+                    <a href="#" class="small">Share it with the community.</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+</body>
+
+</html>

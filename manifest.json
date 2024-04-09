@@ -1,0 +1,27 @@
+{
+    "name": "TrydealsNow",
+    "version": "0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "assets/images/logo.png",
+        "default_title": "TryDealsNow"
+        
+    },
+    "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum ullam inventore at! Voluptatum ipsam nisi error dignissimos voluptatem!",
+    "icons": {
+        "128": "assets/images/logo.png"
+    },
+    "background": {
+      "service_worker": "assets/js/background.js"
+    },
+    "permissions": ["activeTab","scripting","tabs"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": [
+                "assets/js/content.js"
+                ]
+        }
+    ]
+}
